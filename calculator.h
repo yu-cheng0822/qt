@@ -21,11 +21,12 @@ private slots:
     void equalClicked();
     void clearClicked();
     void pointClicked();
+    void backspaceClicked();   // 新增：退格
 
 private:
     void createUI();
     QPushButton* createButton(const QString &text, const char *member);
-    
+
     QLineEdit *display;
     QString currentOperator;
     double leftOperand;

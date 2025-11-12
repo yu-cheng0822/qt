@@ -71,3 +71,7 @@ make
 - 錯誤處理（除以零時顯示 "Error"）
 - 自適應視窗大小
 - 彩色按鈕設計
+
+## 螢幕截圖
+
+![Calculator Screenshot](calculator_screenshot.png)

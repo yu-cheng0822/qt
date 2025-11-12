@@ -84,13 +84,13 @@ QPushButton* Calculator::createButton(const QString &text, const char *member)
         button->setStyleSheet("QPushButton { background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 5px; }"
                              "QPushButton:pressed { background-color: #d0d0d0; }");
     } else if (text == "C") {
-        button->setStyleSheet("QPushButton { background-color: #ff6b6b; color: white; border: 1px solid #ff5252; border-radius: 5px; }"
+        button->setStyleSheet("QPushButton { background-color: #ff6b6b; color: black; border: 1px solid #ff5252; border-radius: 5px; }"
                              "QPushButton:pressed { background-color: #ff5252; }");
     } else if (text == "=") {
-        button->setStyleSheet("QPushButton { background-color: #4CAF50; color: white; border: 1px solid #45a049; border-radius: 5px; }"
+        button->setStyleSheet("QPushButton { background-color: #4CAF50; color: black; border: 1px solid #45a049; border-radius: 5px; }"
                              "QPushButton:pressed { background-color: #45a049; }");
     } else {
-        button->setStyleSheet("QPushButton { background-color: #2196F3; color: white; border: 1px solid #1976D2; border-radius: 5px; }"
+        button->setStyleSheet("QPushButton { background-color: #2196F3; color: black; border: 1px solid #1976D2; border-radius: 5px; }"
                              "QPushButton:pressed { background-color: #1976D2; }");
     }
     

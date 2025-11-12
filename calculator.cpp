@@ -72,18 +72,15 @@ void Calculator::createUI()
     gridLayout->addWidget(b0,    4, 0, 1, 2);
     gridLayout->addWidget(point, 4, 2);
 
-    // 加號（跨三行：row 1~3）
+
     QPushButton *addButton = createButton("+", SLOT(operatorClicked()));
     gridLayout->addWidget(addButton,   1, 3, 2, 1);
 
 
-    // 等號（跨兩行：row 3~4）
     QPushButton *equalButton = createButton("=", SLOT(equalClicked()));
     gridLayout->addWidget(equalButton, 3, 3, 2, 1);
 
-    // 清除放哪裡？可選：替換原本 C 為退格或另外加
-    // 若仍需要 C，可放在左上角或另外一列。這裡示範不再使用 C（用 ← 當單步退格）。
-    // 如果還要保留 C，可再新增：QPushButton *clearButton = createButton("C", SLOT(clearClicked()));
+
 
     gridLayout->setHorizontalSpacing(8);
     gridLayout->setVerticalSpacing(8);
@@ -114,13 +111,15 @@ QPushButton* Calculator::createButton(const QString &text, const char *member)
             );
     } else if (text == "=") {
         button->setStyleSheet(
-            "QPushButton { background-color: #4CAF50; color: #FFFFFF; border: 1px solid #2E7D32; border-radius: 6px; }"
-            "QPushButton:pressed { background-color: #2E7D32; }"
+            "QPushButton { background:#4CAF50; color:#FFF; border:1px solid #2E7D32; "
+            "border-radius:10px; font-size:65px; padding:20px 10px; }"
+            "QPushButton:pressed { background:#2E7D32; }"
             );
     } else if (text == "+") {
         button->setStyleSheet(
-            "QPushButton { background-color: #2196F3; color: #FFFFFF; border: 1px solid #1565C0; border-radius: 6px; }"
-            "QPushButton:pressed { background-color: #1565C0; }"
+            "QPushButton { background:#2196F3; color:#FFF; border:1px solid #1565C0; "
+            "border-radius:10px; font-size:65px; padding:20px 10px; }"
+            "QPushButton:pressed { background:#1565C0; }"
             );
     } else {
         // 其他運算子：藍系

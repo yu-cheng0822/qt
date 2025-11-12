@@ -1,0 +1,42 @@
+# Qt build artifacts
+*.o
+*.so
+*.a
+moc_*
+qrc_*
+ui_*
+Makefile*
+*.pro.user
+*.pro.user.*
+.qmake.stash
+
+# Build directories
+build/
+debug/
+release/
+
+# Executable
+calculator
+
+# Qt Creator
+*.autosave
+
+# C++ objects and libs
+*.slo
+*.lo
+*.obj
+*.lib
+*.dll
+*.dylib
+
+# Compiled Dynamic libraries
+*.so.*
+
+# Compiled Static libraries
+*.lai
+*.la
+
+# Executables
+*.exe
+*.out
+*.app
